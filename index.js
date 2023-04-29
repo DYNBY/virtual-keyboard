@@ -15,11 +15,18 @@ document.onkeydown = function (event) {
   keyArr.push(event.key);
   console.log(keyArr);
 };
+function stopDefAction(evt) {
+  evt.preventDefault();
+}
 textarea.className = 'textarea';
 document.body.append(textarea);
 div.className = 'keyboard';
 document.body.append(div);
-
+function setFocus() {
+  document.querySelector('.textarea').focus();
+  document.querySelector('.textarea', stopDefAction);
+}
+document.body.addEventListener('onload', setFocus());
 function init() {
   let out = '';
   for (let i = 0; i < keyArr.length; i += 1) {
@@ -31,8 +38,11 @@ function init() {
 init();
 
 document.onkeydown = function (event) {
+  stopDefAction();
   document.querySelector('.k-key[data="' + event.code + '"]').classList.add('active');
-  textarea.innerHTML += event.key;
+  if (event.key !== 'Tab' || event.key !== 'Backspace') {
+    textarea.innerHTML += event.key;
+  }
 };
 
 document.onkeyup = function (event) {
