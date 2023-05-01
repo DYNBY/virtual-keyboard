@@ -1,3 +1,4 @@
+
 .textarea {
   display: block;
   width: 800px;
@@ -31,6 +32,19 @@
   text-align: center;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+.k-key-alphabet {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 3px;
+  padding: 3px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .active {
