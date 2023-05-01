@@ -1,0 +1,84 @@
+.task-name {
+  display: block;
+  font-size: 46px;
+  color: black;
+  text-align: center;
+}
+.descr {
+  display: block;
+  text-align: center;
+}
+.textarea {
+  display: block;
+  width: 800px;
+  height: 200px;
+  margin: 20px auto 10px;
+  padding: 10px;
+  font-size: 18px;
+  color: #444444;
+}
+
+.keyboard {
+  width: 825px;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-bottom: 0;
+  background: #888888;
+  border: 3px solid #222222;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.k-key {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 3px;
+  padding: 3px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.alphabet {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 3px;
+  padding: 3px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.active {
+  background-color: aquamarine;
+}
+
+#Backspace {
+  width: 100px;
+}
+
+#Tab {
+  width: 50px;
+}
+
+#Del {
+  width: 44px;
+}
+
+#CapsLock, 
+#Shift,
+#Enter {
+  width: 100px;
+}
+
+#Space {
+  width: 355px;
+}
+
